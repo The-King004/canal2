@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --primary-color: #618264;
+    --colo-active: #79AC78;
+    --color-text: #443434;
+    --color-title: #000E01;
+    --font-IBM: 'IBM Plex Sans Hebrew', sans-serif;
+    --font-open_sans: 'Open Sans', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --padding-header: 3.3rem 6.4rem 3.3rem 6.4rem;
+    --padding-footer: 0 46rem;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+body{
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: none;
+}
+
+::-webkit-scrollbar{
+    background: #c1e3c5;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--colo-active);
+    border-radius: 10rem;
+}
+
+header{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-header);
+}
+
+header .logo{
+    width: 11rem;
+}
+
+header .logo img{
+    width: 100%;
+    height: auto;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    height: 100%;
+    width: 50rem;
+}
+
+header ul a {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--color-title);
+}
+
+.active{
+    /* text-decoration: underline; */
+    border-bottom: .2rem solid var(--colo-active);
+    color: var(--colo-active);
+}
+
+header button{
+    border: none;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 500;
+    transition: all .30s ease;
+}
+
+header button:hover{
+    background: rgb(97, 130, 100, .8);
+}
+
+header button:active{
+    transform: scale(.9);
+}
+
+.francis{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    padding: var(--padding-header);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.francis_actu{
+    width: 55%;
+    background: linear-gradient(to top, #000000c7, rgba(0, 0, 0, 0)), url(../img/Francis.svg) center top / cover;
+    border-radius: 2rem;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.francis_actu .text{
+    color: #fff;
+    border-left: .8rem solid var(--primary-color);
+    padding: 0 1.6rem;
+}
+
+.francis_actu .text h2{
+    font-size: 2.8rem;
+    font-family: var(--font-IBM);
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+.francis_actu .text span{
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.francis_article{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.francis_article h2{
+    border-left: .8rem solid var(--primary-color);
+    padding: .8rem;
+    margin: 0;
+}
+
+.francis_article a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.francis_article_one{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 11rem;
+}
+
+.francis_article_one_img{
+    width: 50%;
+    height: 100%;
+    background: no-repeat url(../img/annie-spratt-cVEOh_JJmEE-unsplash\ 1.svg) center top / cover;
+    border-radius: 1rem;
+}
+
+.francis_article_one_text{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.francis_article_one_text h3{
+    font-size: 1.9rem;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.francis_article_one_text span{
+    font-size: 1.2rem;
+}
+
+.other-article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-header);
+
+}
+
+.other-article a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.other-article_one{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+.other-article_one img{
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.other-article_one .text span{
+    font-size: 1.2rem;
+    color: var(--colo-active);
+}
+
+.other-article_one h3{
+    font-size: 2rem;
+    margin: 0;
+    margin-top: .8rem;
+    font-family: var(--font-open_sans);
+}
+
+.actualites{
+    width: 100%;
+    height: 66rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-header);
+}
+
+.actualites h2{
+    font-size: 4rem;
+    font-family: var(--font-inter);
+    margin: 0;
+}
+
+.actualites img{
+    width: 80%;
+}
+
+
+.canal{
+    display: flex;
+    flex-direction: column;
+    height: 90rem;
+    justify-content: space-between;
+    padding: var(--padding-header);
+    margin-top: 4rem;
+}
+
+.canal_matin{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.canal_matin-text{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.canal h2{
+    font-size: 3.5rem;
+    width: 60%;
+}
+
+.canal p{
+    font-size: 2rem;
+    width: 70%;
+}
+
+.canal span{
+    font-size: 2rem;
+}
+
+.canal img{
+    width: 55rem;
+}
+
+.canal_comment{
+    display: flex;
+    justify-content: space-between;
+}
+
+.publicite{
+    width: 100%;
+    height: 40rem;
+    background: no-repeat url(../img/produit.svg) center top / cover;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+}
+
+footer{
+    width: 100%;
+    height: 28rem;
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer h2{
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+    padding: 4rem;
+}
+
+footer .page{
+    padding: var(--padding-footer);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a img{
+    width: 5rem;
+    height: 5rem;
+}
+
+footer .logo{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
